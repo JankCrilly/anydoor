@@ -1,0 +1,43 @@
+{
+  "name": "anydoor_jk",
+  "version": "0.1.2",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  },
+  "description": "Jank nodejs web server",
+  "main": "./app.js",
+  "bin": {
+      "anydoor": "bin/anydoor"
+  },
+  "dependencies": {
+    "curl": "^0.1.4",
+    "handlebars": "^4.0.12",
+    "yargs": "^12.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "pre-commit": "^1.2.2"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "fix": "eslint --fix ."
+  },
+  "pre-commit": [
+    "fix",
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JankCrilly/anydoor.git"
+  },
+  "author": "'Jank'",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JankCrilly/anydoor/issues"
+  },
+  "homepage": "https://github.com/JankCrilly/anydoor#readme"
+}
